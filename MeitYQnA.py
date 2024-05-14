@@ -22,13 +22,13 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import SystemMessagePromptTemplate, ChatPromptTemplate
 from dotenv import load_dotenv
 
-api_key = os.getenv("api_key")
+api_key = os.getenv('api_key')
 sys.path.append('../..')
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
 
 persist_directory = 'chroma/'
-os.environ['OPENAI_API_KEY'] = api_key
+#os.environ['OPENAI_API_KEY'] = api_key
 
 
 #model = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, openai_api_key=api_key)
