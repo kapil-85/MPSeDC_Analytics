@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  api_key: ${{ secrets.api_key }}
+  API_KEY: ${{ secrets.API_KEY }}
 
 jobs:
   build:
