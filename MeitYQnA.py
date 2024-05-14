@@ -89,7 +89,7 @@ def user_input(user_question, api_key):
     response = qa_chain({"question": query, "chat_history": chat_history})
     st.text_area("##### Reply:", response["answer"],height=200)
     #st.code(response["answer"], language="markdown")
-    #st.text_area("Reply: ", response["output_text"],height=20)
+    #st.text_area("Reply: ", response["output_text"],height=200)
     
     chat_history.append((query, response["answer"]))
     print("================CALL: user_input END================", datetime.datetime.now())
@@ -131,6 +131,7 @@ def main():
         st.title("Introduction")
         st.write("This is a GenAI bot for answering the question that Govt. Department users might have while creating RFP.")
         st.write("The bot responds to user queries with information learned from MeitY guidelines for RFP creation on Selection of Implementation Agencies.")
+        st.write("<a href='/MeitY_guideline_RFP'>MeitY_guideline_RFP</a>")
     print("================CALL: main END================", datetime.datetime.now())
 
 if __name__ == "__main__":
