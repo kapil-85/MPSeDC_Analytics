@@ -21,8 +21,11 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import SystemMessagePromptTemplate, ChatPromptTemplate
 from dotenv import load_dotenv
+import base64    
 
-api_key = os.environ['api_key']
+api_key_t = os.environ["api_key"]
+api_key = base64.b64encode(f"{api_key_t}".encode("ascii"))
+
 sys.path.append('../..')
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
