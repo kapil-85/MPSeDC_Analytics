@@ -24,7 +24,7 @@ from langchain.prompts import SystemMessagePromptTemplate, ChatPromptTemplate
 sys.path.append('../..')
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
-api_key="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"
+
 persist_directory = 'chroma/'
 os.environ['OPENAI_API_KEY'] = api_key
 
