@@ -20,7 +20,9 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import SystemMessagePromptTemplate, ChatPromptTemplate
+from dotenv import load_dotenv
 
+api_key = os.getenv("api_key")
 sys.path.append('../..')
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
