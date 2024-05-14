@@ -28,7 +28,7 @@ from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
 
 persist_directory = 'chroma/'
-#os.environ['OPENAI_API_KEY'] = api_key
+os.environ['OPENAI_API_KEY'] = api_key
 
 
 #model = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, openai_api_key=api_key)
