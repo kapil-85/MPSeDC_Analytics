@@ -131,7 +131,6 @@ def main():
         st.title("Introduction")
         st.write("This is a GenAI bot for answering the question that Govt. Department users might have while creating RFP.")
         st.write("The bot responds to user queries with information learned from MeitY guidelines for RFP creation on Selection of Implementation Agencies.")
-        st.write("<a href='/MeitY_guideline_RFP'>MeitY_guideline_RFP</a>")
     print("================CALL: main END================", datetime.datetime.now())
 
 if __name__ == "__main__":
