@@ -1,0 +1,7 @@
+openai
+streamlit
+langchain_text_splitters
+langchain_community
+chromadb
+langchain_openai
+langchain
