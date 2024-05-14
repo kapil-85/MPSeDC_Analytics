@@ -24,6 +24,8 @@ from dotenv import load_dotenv
 import base64    
 
 api_key = os.environ.get("API_KEY")
+print("=============================================")
+print(api_key)
 #api_key = base64.b64encode(f"{api_key_t}".encode("ascii"))
 
 sys.path.append('../..')
