@@ -1,0 +1,7 @@
+name: Run Python Script
+
+on:
+  workflow_dispatch:
+
+env:
+  api_key: ${{ secrets.api_key }}
