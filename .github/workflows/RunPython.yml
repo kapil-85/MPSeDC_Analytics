@@ -22,5 +22,5 @@ jobs:
       run: pip install -r requirements.txt
     - name: Test with MeitYQnA
       run: |
-        python MeitYQnA.py
+        MeitYQnA.py
 
