@@ -141,7 +141,12 @@ def main():
         st.title("Introduction")
         st.write("This is a GenAI bot for answering the question that Govt. Department users might have while creating RFP.")
         st.write("The bot responds to user queries with information learned from MeitY guidelines for RFP creation on Selection of Implementation Agencies.")
-        st.write("<a href='https://www.meity.gov.in/writereaddata/files/model_rfp_for_selection_of_implementation_agencies-2018.pdf'>Download Complete File</a>")
+        
+        file_link = """
+        <a href='https://www.meity.gov.in/writereaddata/files/model_rfp_for_selection_of_implementation_agencies-2018.pdf'>Download Complete File</a>
+        """
+        st.markdown(file_link, unsafe_allow_html = True)
+        
     print("================CALL: main END================", datetime.datetime.now())
 
 if __name__ == "__main__":
