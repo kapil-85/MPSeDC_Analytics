@@ -141,7 +141,7 @@ def main():
     with st.sidebar:
         st.sidebar.image("https://www.timesjobs.com/timesjobs/mpsdc/images/logo.png")
         st.title("Introduction")
-        st.write("This is a GenAI bot for answering the question that Govt. Department users might have while creating RFP.")
+        st.write(":blue[This is a GenAI bot for answering the question that Govt. Department users might have while creating RFP.]")
         st.write("The bot responds to user queries with information learned from MeitY guidelines for RFP creation on Selection of Implementation Agencies.")
         
         file_link = """
