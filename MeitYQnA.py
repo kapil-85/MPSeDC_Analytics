@@ -143,7 +143,7 @@ def main():
         st.write("The bot responds to user queries with information learned from MeitY guidelines for RFP creation on Selection of Implementation Agencies.")
         
         file_link = """
-        <a href='https://www.meity.gov.in/writereaddata/files/model_rfp_for_selection_of_implementation_agencies-2018.pdf'>Download Complete File</a>
+        <a href='https://www.meity.gov.in/writereaddata/files/model_rfp_for_selection_of_implementation_agencies-2018.pdf'>Download Complete Guidelines</a>
         """
         st.markdown(file_link, unsafe_allow_html = True)
         
