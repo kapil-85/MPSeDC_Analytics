@@ -112,7 +112,7 @@ st.set_page_config(page_title="Question & Answer", layout="wide")
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"]{
-background-image:  url("https://images.unsplash.com/photo-1566041510394-cf7c8fe21800");
+background-image:  url("https://images.unsplash.com/photo-1569982175971-d92b01cf8694");
 background-size: cover;
 }"""
 st.markdown(page_bg_img, unsafe_allow_html = True)
@@ -139,7 +139,7 @@ def main():
         if submitted:
             user_input(user_question, api_key)
     with st.sidebar:
-        st.sidebar.image("https://images.unsplash.com/photo-1612538498613-35c5c8d675c4")
+        st.sidebar.image("https://www.timesjobs.com/timesjobs/mpsdc/images/logo.png")
         st.title("Introduction")
         st.write("This is a GenAI bot for answering the question that Govt. Department users might have while creating RFP.")
         st.write("The bot responds to user queries with information learned from MeitY guidelines for RFP creation on Selection of Implementation Agencies.")
