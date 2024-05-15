@@ -112,7 +112,7 @@ st.set_page_config(page_title="MeitY RFP Guide", layout="wide")
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"]{
-background-image:  url("https://images.unsplash.com/photo-1569982175971-d92b01cf8694");
+background-image:  url("https://png.pngtree.com/thumb_back/fh260/background/20190220/ourmid/pngtree-watercolor-light-yellow-light-green-pink-color-image_7008.jpg");
 background-size: cover;
 }"""
 st.markdown(page_bg_img, unsafe_allow_html = True)
@@ -126,7 +126,7 @@ st.markdown("""
 <h4 style="color:cyan"> The bot has learned from MeitY's guideline document for Selection of Implementation Agency(Yr'2018) to answer user's queries.</h4>
 <i>This chatbot is leveraging OpenAI's Generative AI model GPT-4.</i>
 
-""")
+""", unsafe_allow_html = True)
 st.header(" ")
 
 
