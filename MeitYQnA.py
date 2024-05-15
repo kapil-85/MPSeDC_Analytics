@@ -122,6 +122,8 @@ st.markdown("""
 
 ### RFP Advisor for Selection of Implementation Agency
 
+
+
 ##### The bot has learned from MeitY's guideline document for Selection of Implementation Agency(Yr'2018) to answer user's queries.
 This chatbot is leveraging OpenAI's Generative AI model GPT-4.
 
