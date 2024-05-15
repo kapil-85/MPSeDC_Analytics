@@ -133,7 +133,15 @@ def main():
     with st.form("my_form"):
         user_question = st.text_input("##### Ask a Question to get references from MeitY RFP guidelines document:", key="user_question", help="Ask your question here...", placeholder="Ask your question here...")
         #if user_question and api_key:  # Ensure API key and user question are provided
-        st.form_submit_button('Submit', on_click=user_input(user_question, api_key))
+        bt1 = st.button(
+            "Submit",
+            key=None,
+            help="Click to submit question.",
+            on_click=user_input, # only the function name
+            args=(user_question, api_key,), # include args here, not above
+            kwargs=None,
+            disabled=False,
+        )
     with st.sidebar:
         st.sidebar.image("https://www.timesjobs.com/timesjobs/mpsdc/images/logo.png")
         st.title("Introduction")
