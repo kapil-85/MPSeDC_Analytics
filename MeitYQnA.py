@@ -109,13 +109,13 @@ def user_input(user_question, api_key):
 
 st.set_page_config(page_title="Question & Answer", layout="wide")
 
-page_bg_img = """
-<style>
-[data-testid="stAppViewContainer"]{
-background-image:  url("https://png.pngtree.com/thumb_back/fh260/background/20190220/ourmid/pngtree-watercolor-light-yellow-light-green-pink-color-image_7008.jpg");
-background-size: cover;
-}"""
-st.markdown(page_bg_img, unsafe_allow_html = True)
+#page_bg_img = """
+#<style>
+#[data-testid="stAppViewContainer"]{
+#background-image:  url("https://png.pngtree.com/thumb_back/fh260/background/20190220/ourmid/pngtree-watercolor-light-yellow-light-green-pink-color-image_7008.jpg");
+#background-size: cover;
+#}"""
+#st.markdown(page_bg_img, unsafe_allow_html = True)
 
 
 st.markdown("""
