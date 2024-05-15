@@ -107,7 +107,7 @@ def user_input(user_question, api_key):
 
 
 
-st.set_page_config(page_title="Question & Answer", layout="wide")
+st.set_page_config(page_title="MeitY RFP Guide", layout="wide")
 
 page_bg_img = """
 <style>
@@ -120,11 +120,11 @@ st.markdown(page_bg_img, unsafe_allow_html = True)
 
 st.markdown("""
 
-### RFP Advisor for Selection of Implementation Agency
-### 
-###
-##### The bot has learned from MeitY's guideline document for Selection of Implementation Agency(Yr'2018) to answer user's queries.
-This chatbot is leveraging OpenAI's Generative AI model GPT-4.
+<h2 style="color:cyan"> RFP Advisor for Selection of Implementation Agency </h2>
+<br/>
+<br/>
+<h4 style="color:cyan"> The bot has learned from MeitY's guideline document for Selection of Implementation Agency(Yr'2018) to answer user's queries.</h4>
+<i>This chatbot is leveraging OpenAI's Generative AI model GPT-4.</i>
 
 """)
 st.header(" ")
