@@ -23,9 +23,10 @@ from langchain.prompts import SystemMessagePromptTemplate, ChatPromptTemplate
 from dotenv import load_dotenv
 import base64    
 
-api_key = os.environ['API_KEY']
+#api_key = os.environ['API_KEY']
+api_key = st.secrets["db_username"]
 print("=============================================")
-print(api_key)
+print(len(api_key))
 #api_key = base64.b64encode(f"{api_key_t}".encode("ascii"))
 
 sys.path.append('../..')
