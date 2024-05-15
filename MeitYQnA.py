@@ -139,7 +139,7 @@ def main():
         if submitted:
             user_input(user_question, api_key)
     with st.sidebar:
-        st.sidebar.image("https://www.timesjobs.com/timesjobs/mpsdc/images/logo.png")
+        st.sidebar.image("https://images.unsplash.com/photo-1612538498613-35c5c8d675c4")
         st.title("Introduction")
         st.write("This is a GenAI bot for answering the question that Govt. Department users might have while creating RFP.")
         st.write("The bot responds to user queries with information learned from MeitY guidelines for RFP creation on Selection of Implementation Agencies.")
