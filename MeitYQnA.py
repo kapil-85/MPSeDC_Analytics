@@ -133,16 +133,16 @@ st.header(" ")
 def main():
     print("================CALL: main START================", datetime.datetime.now())
     with st.form("my_form"):
-        user_question = st.text_input("###### Ask a Question to get references from MeitY RFP guidelines document:", key="user_question", help="Ask your question here...", placeholder="Ask your question here...")
+        user_question = st.text_input("###### :blue Ask a Question to get references from MeitY RFP guidelines document:", key="user_question", help="Ask your question here...", placeholder="Ask your question here...")
         #if user_question and api_key:  # Ensure API key and user question are provided
         submitted = st.form_submit_button("Submit")
         if submitted:
             user_input(user_question, api_key)
     with st.sidebar:
         st.sidebar.image("https://www.timesjobs.com/timesjobs/mpsdc/images/logo.png")
-        st.title("Introduction")
-        st.write("This is a GenAI bot for answering the question that Govt. Department users might have while creating RFP.")
-        st.write("The bot responds to user queries with information learned from MeitY guidelines for RFP creation on Selection of Implementation Agencies.")
+        st.title(":blue Introduction")
+        st.write(":blue This is a GenAI bot for answering the question that Govt. Department users might have while creating RFP.")
+        st.write(":blue The bot responds to user queries with information learned from MeitY guidelines for RFP creation on Selection of Implementation Agencies.")
         
         file_link = """
         <a href='https://www.meity.gov.in/writereaddata/files/model_rfp_for_selection_of_implementation_agencies-2018.pdf'>Download Complete Guidelines</a>
