@@ -120,11 +120,11 @@ st.markdown(page_bg_img, unsafe_allow_html = True)
 
 st.markdown("""
 
-<h2 style="color:cyan"> RFP Advisor for Selection of Implementation Agency </h2>
+<h2 style="color:black"> RFP Advisor for Selection of Implementation Agency </h2>
 <br/>
 <br/>
-<h4 style="color:cyan"> The bot has learned from MeitY's guideline document for Selection of Implementation Agency(Yr'2018) to answer user's queries.</h4>
-<i>This chatbot is leveraging OpenAI's Generative AI model GPT-4.</i>
+<h4 style="color:black"> The bot has learned from MeitY's guideline document for Selection of Implementation Agency(Yr'2018) to answer user's queries.</h4>
+<i style="color:black">This chatbot is leveraging OpenAI's Generative AI model GPT-4.</i>
 
 """, unsafe_allow_html = True)
 st.header(" ")
@@ -133,7 +133,7 @@ st.header(" ")
 def main():
     print("================CALL: main START================", datetime.datetime.now())
     with st.form("my_form"):
-        user_question = st.text_input("###### Ask a Question to get references from MeitY RFP guidelines document:", key="user_question", help="Ask your question here...", placeholder="Ask your question here...")
+        user_question = st.text_input("<h4 style="color:black">Ask a Question to get references from MeitY RFP guidelines document:</h4>", key="user_question", help="Ask your question here...", placeholder="Ask your question here...",  unsafe_allow_html = True)
         #if user_question and api_key:  # Ensure API key and user question are provided
         submitted = st.form_submit_button("Submit")
         if submitted:
