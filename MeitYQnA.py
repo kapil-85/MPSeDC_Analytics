@@ -112,7 +112,7 @@ st.set_page_config(page_title="Question & Answer", layout="wide")
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"]{
-background-image:  url("https://img.freepik.com/free-photo/blue-wall-background_53876-88663.jpg");
+background-image:  url("https://images.unsplash.com/photo-1566041510394-cf7c8fe21800");
 background-size: cover;
 }"""
 st.markdown(page_bg_img, unsafe_allow_html = True)
