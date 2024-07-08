@@ -6,3 +6,4 @@ chromadb
 langchain_openai
 langchain
 pysqlite3-binary
+protobuf~=3.19.0
